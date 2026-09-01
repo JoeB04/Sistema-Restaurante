@@ -25,6 +25,12 @@ public class Orden {
     @JoinColumn(name = "mesero_id", nullable = false)
     private Usuario mesero;
 
+    // Cliente identificado (opcional). Si es null, es un cliente ocasional
+    // que no se registro - el sistema sigue funcionando igual sin el.
+    @ManyToOne
+    @JoinColumn(name = "cliente_id", nullable = true)
+    private Cliente cliente;
+
     @Column(name = "numero_comensales")
     private Integer numeroComensales = 1;
 
@@ -66,6 +72,14 @@ public class Orden {
 
     public void setMesero(Usuario mesero) {
         this.mesero = mesero;
+    }
+
+    public Cliente getCliente() {
+        return cliente;
+    }
+
+    public void setCliente(Cliente cliente) {
+        this.cliente = cliente;
     }
 
     public Integer getNumeroComensales() {

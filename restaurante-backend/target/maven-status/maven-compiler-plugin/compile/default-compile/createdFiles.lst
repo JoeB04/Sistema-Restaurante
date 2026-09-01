@@ -1,4 +1,5 @@
 com\restaurante\dto\NuevaOrdenRequest.class
+com\restaurante\config\AppConfig.class
 com\restaurante\controller\MenuController.class
 com\restaurante\dto\LoginRequest.class
 com\restaurante\repository\ZonaRepository.class
@@ -19,9 +20,11 @@ com\restaurante\model\Usuario.class
 com\restaurante\dto\CambiarEstadoRequest.class
 com\restaurante\model\Plato.class
 com\restaurante\controller\AuthController$ResponseEntityWrapper.class
+com\restaurante\model\Cliente.class
 com\restaurante\model\ElementoDecorativo.class
 com\restaurante\model\Mesa.class
 com\restaurante\repository\PlatoRepository.class
+com\restaurante\controller\ClienteController.class
 com\restaurante\model\Orden$EstadoOrden.class
 com\restaurante\model\Zona.class
 com\restaurante\controller\AuthController.class
@@ -31,6 +34,7 @@ com\restaurante\model\Item.class
 com\restaurante\controller\ElementoDecorativoController.class
 com\restaurante\dto\NuevoItemRequest.class
 com\restaurante\controller\MesaController.class
+com\restaurante\repository\ClienteRepository.class
 com\restaurante\controller\BoletaController.class
 com\restaurante\repository\BoletaRepository.class
 com\restaurante\model\Item$EstadoItem.class

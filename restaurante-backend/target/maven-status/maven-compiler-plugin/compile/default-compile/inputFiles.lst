@@ -1,33 +1,37 @@
-C:\Users\Lenovo\Desktop\Sistema Restaurante\restaurante-backend\src\main\java\com\restaurante\restaurante\backend\controller\AuthController.java
-C:\Users\Lenovo\Desktop\Sistema Restaurante\restaurante-backend\src\main\java\com\restaurante\restaurante\backend\controller\BoletaController.java
-C:\Users\Lenovo\Desktop\Sistema Restaurante\restaurante-backend\src\main\java\com\restaurante\restaurante\backend\controller\ElementoDecorativoController.java
-C:\Users\Lenovo\Desktop\Sistema Restaurante\restaurante-backend\src\main\java\com\restaurante\restaurante\backend\controller\ItemController.java
-C:\Users\Lenovo\Desktop\Sistema Restaurante\restaurante-backend\src\main\java\com\restaurante\restaurante\backend\controller\MenuController.java
-C:\Users\Lenovo\Desktop\Sistema Restaurante\restaurante-backend\src\main\java\com\restaurante\restaurante\backend\controller\MesaController.java
-C:\Users\Lenovo\Desktop\Sistema Restaurante\restaurante-backend\src\main\java\com\restaurante\restaurante\backend\controller\OrdenController.java
-C:\Users\Lenovo\Desktop\Sistema Restaurante\restaurante-backend\src\main\java\com\restaurante\restaurante\backend\controller\UsuarioController.java
-C:\Users\Lenovo\Desktop\Sistema Restaurante\restaurante-backend\src\main\java\com\restaurante\restaurante\backend\controller\ZonaController.java
-C:\Users\Lenovo\Desktop\Sistema Restaurante\restaurante-backend\src\main\java\com\restaurante\restaurante\backend\dto\CambiarEstadoRequest.java
-C:\Users\Lenovo\Desktop\Sistema Restaurante\restaurante-backend\src\main\java\com\restaurante\restaurante\backend\dto\GenerarBoletaRequest.java
-C:\Users\Lenovo\Desktop\Sistema Restaurante\restaurante-backend\src\main\java\com\restaurante\restaurante\backend\dto\LoginRequest.java
-C:\Users\Lenovo\Desktop\Sistema Restaurante\restaurante-backend\src\main\java\com\restaurante\restaurante\backend\dto\NuevaOrdenRequest.java
-C:\Users\Lenovo\Desktop\Sistema Restaurante\restaurante-backend\src\main\java\com\restaurante\restaurante\backend\dto\NuevoItemRequest.java
-C:\Users\Lenovo\Desktop\Sistema Restaurante\restaurante-backend\src\main\java\com\restaurante\restaurante\backend\model\Boleta.java
-C:\Users\Lenovo\Desktop\Sistema Restaurante\restaurante-backend\src\main\java\com\restaurante\restaurante\backend\model\Categoria.java
-C:\Users\Lenovo\Desktop\Sistema Restaurante\restaurante-backend\src\main\java\com\restaurante\restaurante\backend\model\ElementoDecorativo.java
-C:\Users\Lenovo\Desktop\Sistema Restaurante\restaurante-backend\src\main\java\com\restaurante\restaurante\backend\model\Item.java
-C:\Users\Lenovo\Desktop\Sistema Restaurante\restaurante-backend\src\main\java\com\restaurante\restaurante\backend\model\Mesa.java
-C:\Users\Lenovo\Desktop\Sistema Restaurante\restaurante-backend\src\main\java\com\restaurante\restaurante\backend\model\Orden.java
-C:\Users\Lenovo\Desktop\Sistema Restaurante\restaurante-backend\src\main\java\com\restaurante\restaurante\backend\model\Plato.java
-C:\Users\Lenovo\Desktop\Sistema Restaurante\restaurante-backend\src\main\java\com\restaurante\restaurante\backend\model\Usuario.java
-C:\Users\Lenovo\Desktop\Sistema Restaurante\restaurante-backend\src\main\java\com\restaurante\restaurante\backend\model\Zona.java
-C:\Users\Lenovo\Desktop\Sistema Restaurante\restaurante-backend\src\main\java\com\restaurante\restaurante\backend\repository\BoletaRepository.java
-C:\Users\Lenovo\Desktop\Sistema Restaurante\restaurante-backend\src\main\java\com\restaurante\restaurante\backend\repository\CategoriaRepository.java
-C:\Users\Lenovo\Desktop\Sistema Restaurante\restaurante-backend\src\main\java\com\restaurante\restaurante\backend\repository\ElementoDecorativoRepository.java
-C:\Users\Lenovo\Desktop\Sistema Restaurante\restaurante-backend\src\main\java\com\restaurante\restaurante\backend\repository\ItemRepository.java
-C:\Users\Lenovo\Desktop\Sistema Restaurante\restaurante-backend\src\main\java\com\restaurante\restaurante\backend\repository\MesaRepository.java
-C:\Users\Lenovo\Desktop\Sistema Restaurante\restaurante-backend\src\main\java\com\restaurante\restaurante\backend\repository\OrdenRepository.java
-C:\Users\Lenovo\Desktop\Sistema Restaurante\restaurante-backend\src\main\java\com\restaurante\restaurante\backend\repository\PlatoRepository.java
-C:\Users\Lenovo\Desktop\Sistema Restaurante\restaurante-backend\src\main\java\com\restaurante\restaurante\backend\repository\UsuarioRepository.java
-C:\Users\Lenovo\Desktop\Sistema Restaurante\restaurante-backend\src\main\java\com\restaurante\restaurante\backend\repository\ZonaRepository.java
-C:\Users\Lenovo\Desktop\Sistema Restaurante\restaurante-backend\src\main\java\com\restaurante\restaurante\backend\RestauranteApplication.java
+C:\Users\Lenovo\Desktop\Sistema-Restaurante\restaurante-backend\src\main\java\com\restaurante\restaurante\backend\config\AppConfig.java
+C:\Users\Lenovo\Desktop\Sistema-Restaurante\restaurante-backend\src\main\java\com\restaurante\restaurante\backend\controller\AuthController.java
+C:\Users\Lenovo\Desktop\Sistema-Restaurante\restaurante-backend\src\main\java\com\restaurante\restaurante\backend\controller\BoletaController.java
+C:\Users\Lenovo\Desktop\Sistema-Restaurante\restaurante-backend\src\main\java\com\restaurante\restaurante\backend\controller\ClienteController.java
+C:\Users\Lenovo\Desktop\Sistema-Restaurante\restaurante-backend\src\main\java\com\restaurante\restaurante\backend\controller\ElementoDecorativoController.java
+C:\Users\Lenovo\Desktop\Sistema-Restaurante\restaurante-backend\src\main\java\com\restaurante\restaurante\backend\controller\ItemController.java
+C:\Users\Lenovo\Desktop\Sistema-Restaurante\restaurante-backend\src\main\java\com\restaurante\restaurante\backend\controller\MenuController.java
+C:\Users\Lenovo\Desktop\Sistema-Restaurante\restaurante-backend\src\main\java\com\restaurante\restaurante\backend\controller\MesaController.java
+C:\Users\Lenovo\Desktop\Sistema-Restaurante\restaurante-backend\src\main\java\com\restaurante\restaurante\backend\controller\OrdenController.java
+C:\Users\Lenovo\Desktop\Sistema-Restaurante\restaurante-backend\src\main\java\com\restaurante\restaurante\backend\controller\UsuarioController.java
+C:\Users\Lenovo\Desktop\Sistema-Restaurante\restaurante-backend\src\main\java\com\restaurante\restaurante\backend\controller\ZonaController.java
+C:\Users\Lenovo\Desktop\Sistema-Restaurante\restaurante-backend\src\main\java\com\restaurante\restaurante\backend\dto\CambiarEstadoRequest.java
+C:\Users\Lenovo\Desktop\Sistema-Restaurante\restaurante-backend\src\main\java\com\restaurante\restaurante\backend\dto\GenerarBoletaRequest.java
+C:\Users\Lenovo\Desktop\Sistema-Restaurante\restaurante-backend\src\main\java\com\restaurante\restaurante\backend\dto\LoginRequest.java
+C:\Users\Lenovo\Desktop\Sistema-Restaurante\restaurante-backend\src\main\java\com\restaurante\restaurante\backend\dto\NuevaOrdenRequest.java
+C:\Users\Lenovo\Desktop\Sistema-Restaurante\restaurante-backend\src\main\java\com\restaurante\restaurante\backend\dto\NuevoItemRequest.java
+C:\Users\Lenovo\Desktop\Sistema-Restaurante\restaurante-backend\src\main\java\com\restaurante\restaurante\backend\model\Boleta.java
+C:\Users\Lenovo\Desktop\Sistema-Restaurante\restaurante-backend\src\main\java\com\restaurante\restaurante\backend\model\Categoria.java
+C:\Users\Lenovo\Desktop\Sistema-Restaurante\restaurante-backend\src\main\java\com\restaurante\restaurante\backend\model\Cliente.java
+C:\Users\Lenovo\Desktop\Sistema-Restaurante\restaurante-backend\src\main\java\com\restaurante\restaurante\backend\model\ElementoDecorativo.java
+C:\Users\Lenovo\Desktop\Sistema-Restaurante\restaurante-backend\src\main\java\com\restaurante\restaurante\backend\model\Item.java
+C:\Users\Lenovo\Desktop\Sistema-Restaurante\restaurante-backend\src\main\java\com\restaurante\restaurante\backend\model\Mesa.java
+C:\Users\Lenovo\Desktop\Sistema-Restaurante\restaurante-backend\src\main\java\com\restaurante\restaurante\backend\model\Orden.java
+C:\Users\Lenovo\Desktop\Sistema-Restaurante\restaurante-backend\src\main\java\com\restaurante\restaurante\backend\model\Plato.java
+C:\Users\Lenovo\Desktop\Sistema-Restaurante\restaurante-backend\src\main\java\com\restaurante\restaurante\backend\model\Usuario.java
+C:\Users\Lenovo\Desktop\Sistema-Restaurante\restaurante-backend\src\main\java\com\restaurante\restaurante\backend\model\Zona.java
+C:\Users\Lenovo\Desktop\Sistema-Restaurante\restaurante-backend\src\main\java\com\restaurante\restaurante\backend\repository\BoletaRepository.java
+C:\Users\Lenovo\Desktop\Sistema-Restaurante\restaurante-backend\src\main\java\com\restaurante\restaurante\backend\repository\CategoriaRepository.java
+C:\Users\Lenovo\Desktop\Sistema-Restaurante\restaurante-backend\src\main\java\com\restaurante\restaurante\backend\repository\ClienteRepository.java
+C:\Users\Lenovo\Desktop\Sistema-Restaurante\restaurante-backend\src\main\java\com\restaurante\restaurante\backend\repository\ElementoDecorativoRepository.java
+C:\Users\Lenovo\Desktop\Sistema-Restaurante\restaurante-backend\src\main\java\com\restaurante\restaurante\backend\repository\ItemRepository.java
+C:\Users\Lenovo\Desktop\Sistema-Restaurante\restaurante-backend\src\main\java\com\restaurante\restaurante\backend\repository\MesaRepository.java
+C:\Users\Lenovo\Desktop\Sistema-Restaurante\restaurante-backend\src\main\java\com\restaurante\restaurante\backend\repository\OrdenRepository.java
+C:\Users\Lenovo\Desktop\Sistema-Restaurante\restaurante-backend\src\main\java\com\restaurante\restaurante\backend\repository\PlatoRepository.java
+C:\Users\Lenovo\Desktop\Sistema-Restaurante\restaurante-backend\src\main\java\com\restaurante\restaurante\backend\repository\UsuarioRepository.java
+C:\Users\Lenovo\Desktop\Sistema-Restaurante\restaurante-backend\src\main\java\com\restaurante\restaurante\backend\repository\ZonaRepository.java
+C:\Users\Lenovo\Desktop\Sistema-Restaurante\restaurante-backend\src\main\java\com\restaurante\restaurante\backend\RestauranteApplication.java

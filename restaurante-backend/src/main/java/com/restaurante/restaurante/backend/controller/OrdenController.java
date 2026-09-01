@@ -19,15 +19,17 @@ public class OrdenController {
     private final MesaRepository mesaRepository;
     private final UsuarioRepository usuarioRepository;
     private final PlatoRepository platoRepository;
+    private final ClienteRepository clienteRepository;
 
     public OrdenController(OrdenRepository ordenRepository, ItemRepository itemRepository,
                             MesaRepository mesaRepository, UsuarioRepository usuarioRepository,
-                            PlatoRepository platoRepository) {
+                            PlatoRepository platoRepository, ClienteRepository clienteRepository) {
         this.ordenRepository = ordenRepository;
         this.itemRepository = itemRepository;
         this.mesaRepository = mesaRepository;
         this.usuarioRepository = usuarioRepository;
         this.platoRepository = platoRepository;
+        this.clienteRepository = clienteRepository;
     }
 
     // GET /api/ordenes/{id}
@@ -44,7 +46,8 @@ public class OrdenController {
     }
 
     // POST /api/ordenes  -> el mesero abre una orden nueva al sentar comensales
-    // body: { "mesaId": 1, "meseroId": 2, "numeroComensales": 4 }
+    // body: { "mesaId": 1, "meseroId": 2, "numeroComensales": 4, "clienteId": 5 }
+    // clienteId es opcional (puede omitirse o mandar null)
     @PostMapping
     public Orden crearOrden(@RequestBody NuevaOrdenRequest request) {
         Mesa mesa = mesaRepository.findById(request.mesaId)
@@ -57,6 +60,12 @@ public class OrdenController {
         orden.setMesero(mesero);
         orden.setNumeroComensales(request.numeroComensales != null ? request.numeroComensales : 1);
         orden.setEstado(Orden.EstadoOrden.ABIERTA);
+
+        if (request.clienteId != null) {
+            Cliente cliente = clienteRepository.findById(request.clienteId)
+                    .orElseThrow(() -> new RuntimeException("Cliente no encontrado: " + request.clienteId));
+            orden.setCliente(cliente);
+        }
 
         // La mesa pasa a OCUPADA en cuanto se abre una orden
         mesa.setEstado(Mesa.EstadoMesa.OCUPADA);
@@ -83,7 +92,7 @@ public class OrdenController {
         item.setPlato(plato);
         item.setCantidad(request.cantidad != null ? request.cantidad : 1);
         item.setNotas(request.notas);
-        item.setPrecioUnitario(plato.getPrecio()); // copiamos el precio actual
+        item.setPrecioUnitario(plato.getPrecio());
         item.setEstadoItem(Item.EstadoItem.PENDIENTE);
 
         orden.getItems().add(item);
@@ -91,7 +100,6 @@ public class OrdenController {
     }
 
     // PUT /api/ordenes/{id}/estado  -> body: { "estado": "ENVIADA" }
-    // Se usa cuando el mesero envía la orden a cocina, o para marcar CERRADA/CANCELADA
     @PutMapping("/{id}/estado")
     public Orden cambiarEstadoOrden(@PathVariable Integer id, @RequestBody CambiarEstadoRequest request) {
         Orden orden = ordenRepository.findById(id)
@@ -99,7 +107,6 @@ public class OrdenController {
         Orden.EstadoOrden nuevoEstado = Orden.EstadoOrden.valueOf(request.estado);
         orden.setEstado(nuevoEstado);
 
-        // Sincronizamos el estado visual de la mesa según el estado de la orden
         Mesa mesa = orden.getMesa();
         switch (nuevoEstado) {
             case ENVIADA, EN_PREPARACION -> mesa.setEstado(Mesa.EstadoMesa.EN_PROCESO);
